@@ -1,0 +1,6 @@
+Notes for this project:
+
+Props:
+- help to create reusable and composable react componentfa-spin
+
+- creating components from arrays of data (non-manually)
