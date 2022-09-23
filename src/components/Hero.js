@@ -1,5 +1,4 @@
 import React from "react"
-import '../style.css';
 import cards from "../images/cards.jpeg"
 
 export default function Hero() {
@@ -10,7 +9,6 @@ export default function Hero() {
    </div>
    <h1 className="hero-title">Online Experiences</h1>
    <p className="hero-text">Join unique interactive activities led by incredible hosts</p>
-
   </div>
  )
 }
