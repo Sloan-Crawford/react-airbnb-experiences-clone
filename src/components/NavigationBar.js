@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import image from "../images/github-logo-with-text.png"
 import image2 from "../images/envelope.svg"
 
-export default function Navbar() {
+export default function NavigationBar() {
   return (
     <div className='nav-container'>
       <nav className="nav">
