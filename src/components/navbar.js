@@ -1,7 +1,7 @@
 import React from 'react';
 import pic from "../images/airbnb-logo-min.png"
 import pic2 from "../images/code-icon-peach.svg"
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import image from "../images/github-logo-with-text.png"
 import image2 from "../images/envelope.svg"
 
@@ -10,12 +10,12 @@ export default function Navbar() {
     <div className='nav-container'>
       <nav className="nav">
         <div className="nav-links">
-          <NavLink to ="/">
+          <Link to ="/">
             <img src={pic} alt="AirBnb logo" className='logo'/>
-          </NavLink>
-          <NavLink to ="/code">
+          </Link>
+          <Link to ="/code">
             <img src={pic2} alt="AirBnb logo" className='logo'/>
-          </NavLink>
+          </Link>
         </div>
         <div className='social-links'>
           <a target="#" href="https://github.com/Sloan-Crawford/" className='social-link'>

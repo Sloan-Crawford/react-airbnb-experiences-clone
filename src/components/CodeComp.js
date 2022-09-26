@@ -4,7 +4,7 @@ import Prism from "../prism";
 
 export default function CodeComp() {
  useEffect(() => {
-  Prism.highlightAll();
+  Prism?.highlightAll();
  }, []);
  return (
   <div className="Code code-block">
