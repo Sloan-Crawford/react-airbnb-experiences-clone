@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect} from "react";
+import Prism from "../prism";
+
 
 export default function CodeComp() {
+ useEffect(() => {
+  Prism.highlightAll();
+ }, []);
  return (
-  <div>
+  <div className="Code code-block">
+   <h2>Code Highlight</h2>
+   <p>Component: CarpProps</p>
+   <p>Focus: Using props to make experience cards reusable</p>
    <pre>
-    <code className="language-javascript">
+    <code className="language-javascript code-code">
      {`
 import React from "react";
 import star from "../images/red-star.png"
@@ -41,9 +49,10 @@ export default function CardProps(props) {
     </div>
    </div>
  )
-}`}
+}
+     `}
     </code>
    </pre>
   </div>
- )
+ );
 }

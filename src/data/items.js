@@ -1,6 +1,6 @@
 const data = [  
  {
-  key: 1,
+  id: 1,
   status: "available",
   image: "buz-coach.jpeg",
   rating: 5, 
@@ -10,7 +10,7 @@ const data = [
   cost: 136
  },
  {
-  key: 2,
+  id: 2,
   status: "sold out",
   image: "run-coach.jpeg",
   rating: 4.6, 
@@ -20,7 +20,7 @@ const data = [
   cost: 73
  },
  {
-  key: 3,
+  id: 3,
   status: "coming soon",
   image: "spraypaint-coach.jpeg",
   rating: 4.7, 
@@ -30,7 +30,7 @@ const data = [
   cost: 86
  },
  {
-  key: 4,
+  id: 4,
   status: "available",
   image: "paint-coach.jpeg",
   rating: 4.9, 
