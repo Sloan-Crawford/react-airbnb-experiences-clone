@@ -2,6 +2,7 @@ import CardProps from "./CardProps"
 import data from "../data/items"
 import React from "react"
 
+
 // export default function Card() {
 
 //  const expElements = data.map(exp => CardProps(exp))
@@ -14,3 +15,4 @@ export default function Card(): JSX.Element {
  }</>
  
 }
+

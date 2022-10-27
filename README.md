@@ -99,9 +99,24 @@ Explore this AirBnb Experience Clone website built with React
 
 - within the src folder, create a file called react-app-env.d.ts
 - declare all image files types as follows:
-  '''
+  ```
   declare module "_.png";
   declare module "_.svg";
   declare module "_.jpeg";
   declare module "_.jpg";
-  '''
+  ```
+
+3. Component cannot be used as a JSX component. Its return type 'Element[]' is not a valid JSX element
+
+- within the Card function, import React from "react"
+- wrap the function return in a fragment (A component needs to return a single root element. We can use fragments to package an array of elements as a single element, by using the fragment as that single root element.):
+
+```
+export default function Card(): JSX.Element {
+return <> {
+data.map(exp => [CardProps(exp)])
+} </>
+
+}
+
+```
