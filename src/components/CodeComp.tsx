@@ -1,5 +1,5 @@
 import React, { useEffect} from "react";
-import Prism from "../prism";
+import Prism from "prismjs";
 
 
 export default function CodeComp() {

@@ -6,12 +6,17 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.2.0",
+    "@types/node": "^18.11.7",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
     "babel-plugin-prismjs": "^2.1.0",
     "prismjs": "^1.29.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
+    "typescript": "^4.8.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -38,13 +43,20 @@
       "last 1 safari version"
     ]
   },
-  "babel": {     
+  "babel": {
     "plugins": [
-    ["prismjs", {
-        "languages": ["javascript", "css", "markup"],
-        "theme": "okaidia",
-        "css": true
-    }]
+      [
+        "prismjs",
+        {
+          "languages": [
+            "javascript",
+            "css",
+            "markup"
+          ],
+          "theme": "okaidia",
+          "css": true
+        }
+      ]
     ]
   }
 }

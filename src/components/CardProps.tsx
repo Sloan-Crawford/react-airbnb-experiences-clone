@@ -1,7 +1,7 @@
 import React from "react";
 import star from "../images/red-star.png"
 
-export default function CardProps(props) {
+export default function CardProps(props): JSX.Element {
  
  return (
    <div className="card">

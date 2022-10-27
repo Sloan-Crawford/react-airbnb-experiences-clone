@@ -74,3 +74,34 @@ Explore this AirBnb Experience Clone website built with React
 - CardProps.js: (<img src={require("../images/" + items.image)} alt="Experience-cards" />)
 - then into Card.js
 - then into App.js
+
+**_Troubleshooting migration from JS to Typescript_**
+
+- In terminal import typescript and the related type files:
+- npm add typescript @types/node @types/react @types/react-dom @types/jest
+- then convert individual files from .js to .tsx files (.tsx is for files with JSX within them)
+- do a typescript configuration initialization (creates a tsconfig.json file):
+- npx tsc --init
+- We can't have both jsconfig and tsconfig. If we do, go into jsconfig and copy any settings with the compilerOptions, paste them within the tsconfig and delete the entire jsconfig file.
+
+* Addressing the error messages that ensue:
+
+1. Cannot use JSX unless the '--jsx' flag is provided:
+
+- The problem is VSCode using an older version of typescript (4.0.3), while the typescript version shipped with the project is (4.1.2).
+- go to the tsconfig file and add the following under compilerOptions:
+- "jsx": "react",
+- Go to the command palette CTRL+Shift+P (Or ⌘+Shift+P on Mac).
+- Choose "TypeScript: Select a TypeScript Version...".
+- Choose "Use workspace Version".
+
+2. Cannot find module '../images/airbnb-logo-min.png' or its corresponding type declarations.ts(2307)
+
+- within the src folder, create a file called react-app-env.d.ts
+- declare all image files types as follows:
+  '''
+  declare module "_.png";
+  declare module "_.svg";
+  declare module "_.jpeg";
+  declare module "_.jpg";
+  '''
