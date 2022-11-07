@@ -49,6 +49,7 @@ body {
  font-weight: bold;
 }
 
+/* ========== NavBar ============= */
 .nav-container {
  box-shadow: 0 2px 8px -2px rgba(0, 0, 0, .15);
 }
@@ -90,6 +91,7 @@ body {
  transform: scale(1.05)
 }
 
+/* ========== Hero ============= */
 .hero-container {
  display: flex;
  justify-content: center;
@@ -117,6 +119,7 @@ body {
  font-size: var(--font-size-small);
 }
 
+/* ========== Card Component ============= */
 .cards-container {
  width: clamp(200px, 90vw, 900px);
  display: grid;
@@ -177,24 +180,29 @@ body {
   letter-spacing: .1px;
 }
 
+
+/* ========== Code Page Section ============= */
 .code-container {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .code-block {
- font-size: var(--font-size-small);
- display: flex;
- flex-direction: column;
- align-items: center;
- margin-top: 2rem;
- background-color: rgb(243, 79, 120);
- padding: 2.5rem;
- border-radius: 10px;
- overflow-y: scroll;
- max-height: 80vh;
+  font-size: var(--font-size-small);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  background-color: rgb(243, 79, 120);  
+  padding: 2.5rem;
+  border-radius: 10px;
+  max-width: 90vw;
+  /* max-height: 100%; */
+  height: clamp(200px, 75vh, 90vh);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  overflow-y: scroll;
 }
 
 .code-block h2 {
@@ -203,13 +211,19 @@ body {
 }
 
 .code-block p {
- color: rgb(42, 41, 43);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  /* width: clamp(35ch, 50ch, 75ch); */
+  margin-bottom: .5rem;
 }
 
-.code-code {
- color: rgb(255, 255, 255);
+pre {
+  height: clamp(200px, 75vh, 90vh);
+  max-width: 75vw;
 }
 
+
+/* ========== Footer ============= */
 .footer {
   box-shadow: 0 -2px 5px -1px rgba(0, 0, 0, .15);
   display: flex;
